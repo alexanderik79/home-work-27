@@ -58,6 +58,8 @@ function handleGestureEnd() {
 function handleKeydown(event) {
     if (event.key === 'ArrowLeft') prevSlide();
     else if (event.key === 'ArrowRight') nextSlide();
+
+    if (event.code === 'Space') togglePlayPause();
 }
 
 function init() {
